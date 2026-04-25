@@ -6,7 +6,7 @@ The melting temperature is an important parameter in molecular biology, especial
 
 The program automatically selects the appropriate formula based on the primer length:
 
-1. **Short Primers (< 14 bp):** Uses the **(Wallace Formula)**
+1. **Short Primers (< 14 bp):** Uses the **Wallace Formula**
    $T_m = (A+T) \times 2 + (G+C) \times 4$
 2. **Long Primers (≥ 14 bp):** Uses a more accurate empirical formula
    $T_m = 64.9 + \frac{41 \times (G+C - 16.4)}{(A+T+G+C)}$

@@ -14,17 +14,18 @@ The program automatically selects the appropriate formula based on the primer le
 ## Notes
 *The program validates that the input sequence contains only valid DNA nucleotides (A, T, C, G) and does not include any unintended characters
 that may have been entered by mistake by the user.
+
 *If invalid characters (e.g. the letter R or a number) are detected, the program will display an error message.
 
 ## Sample Inputs for Testing
-* **Input Sequence:** GATCGATCGATCGATCGATC 
+1. **Input Sequence:** GATCGATCGATCGATCGATC 
 * **Expected Output:**
   * Sequence: GATCGATCGATCGATCGATC
   * Length: 20 bp
   * Method: long primer formula
   * Calculated Tm: 51.78°C
  
-* **Input Sequence:** GTTACCRGGATCTC
+2. **Input Sequence:** GTTACCRGGATCTC
 * **Expected Output:** an error message:
   Error: Invalid sequence! Please use only A, T, C, and G.
   

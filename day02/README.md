@@ -33,3 +33,11 @@ that may have been entered by mistake by the user.
   
 
 ## AI Usage
+I used [Gemini](https://gemini.google.com/app) to assist with the following things:
+
+prompts:
+
+1. היי, אני כותבת קוד שמטרתו לעזור לחשב את ה-Tm של פריימרים. איך בפייתון אני יכולה לספור כמה פעמים מופיע תו מסויים ברצף?
+2. הייתי רוצה להכניס גם אופציה להדפיס הודעת שגיאה אם הuser בטעות הקליד תו שהוא לא אחת מהאותיות A,T,C,G.
+3. איך כותבים נוסחאות בmarkdown בתוך README file?
+

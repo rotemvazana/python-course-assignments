@@ -42,8 +42,8 @@ Finally, I created a test file with several test cases to verify that the busine
 ## Requirements
 This project uses **pytest** for automated testing. Since it is a third-party library, you may need to install it before running the tests:
 
-```bash
 pip install pytest
+
 
 ## AI Usage
 I used [Gemini](https://gemini.google.com/app) to assist with the following things:

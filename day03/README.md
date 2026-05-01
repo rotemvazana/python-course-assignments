@@ -32,7 +32,7 @@ Finally, I created a test file with several test cases to verify that the busine
   A version that interacts with the user using standard input (`input()`).
 
 - `primer_tm_cmdline.py`  
-  A command-line interface version that allows the user to enter the DNA sequence directly when running the program from the command line..
+  A command-line interface version that allows the user to enter the DNA sequence directly when running the program from the command line.
 
 - `primer_tm_gui.py`  
   A graphical user interface (GUI) version built using `tkinter`, providing a user-friendly window for calculations.

@@ -1,4 +1,4 @@
-#This program uses a Graphical User Interface (GUI) for the Primer Tm Calculator.
+# This program uses a Graphical User Interface (GUI) for the Primer Tm Calculator.
 # This interface allows users to enter their primer sequence without using the terminal.
 
 import tkinter as tk

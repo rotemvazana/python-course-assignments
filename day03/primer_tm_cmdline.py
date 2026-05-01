@@ -1,4 +1,4 @@
-# This proogram allows the user to input the primer sequence via the command line
+# This program allows the user to input the primer sequence via the command line
 
 import sys
 from primer_tm_module import calculate_tm

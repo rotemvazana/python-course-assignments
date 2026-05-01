@@ -21,6 +21,8 @@ Next, I created three different versions of the program, each using the shared m
 
 Finally, I created a test file with several test cases to verify that the business logic works as expected.
 
+*Additionally, I created a `.gitignore` file to exclude the `__pycache__` folder from the repository, ensuring a clean project environment.
+
 
 ## Files:
 - `primer_tm_module.py`  
@@ -29,7 +31,7 @@ Finally, I created a test file with several test cases to verify that the busine
 - `primer_tm_input.py`  
   A version that interacts with the user using standard input (`input()`).
 
-- `primer"_tm_cmdline.py`  
+- `primer_tm_cmdline.py`  
   A command-line interface version that allows the user to enter the DNA sequence directly when running the program from the command line..
 
 - `primer_tm_gui.py`  
@@ -50,7 +52,7 @@ I used [Gemini](https://gemini.google.com/app) to assist with the following thin
 
 prompts:
 1. היי, תוכל לעזור לי להפוך את החישוב של טמפרטורת ההתכה (ה-"business logic") לפונקציה?
-2. הפרדתי את הפונקציה מהממשק עם הuser, תוכל לעזור לי לכתוב קוד עבור הממשק הגרפי GUI תוך שימוש בספריית tinker?
+2. הפרדתי את הפונקציה מהממשק עם הuser, תוכל לעזור לי לכתוב קוד עבור הממשק הגרפי GUI תוך שימוש בספריית tkinter?
 3. על בסיס הקוד של הפונקציה שלי, איזה מבחנים כדאי לי להריץ כדי לוודא שהיא עובדת כראוי? 
 
 

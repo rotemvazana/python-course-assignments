@@ -1,0 +1,7 @@
+# Third-party libraries required for day05
+pandas
+numpy
+seaborn
+matplotlib
+openpyxl
+pytest

@@ -1,7 +1,7 @@
 import requests
 
 def fetch_tumor_suppressors():
-    # פנייה ל-API של יוניפרוט להורדת 50 חלבונים אנושיים מדכאי-סרטן
+    # Query the UniProt API to download 50 human tumor-suppressor proteins
     url = "https://rest.uniprot.org/uniprotkb/search"
     params = {
         "query": "tumor suppressor AND (taxonomy_id:9606) AND (reviewed:true)",
@@ -33,24 +33,24 @@ def process_mutation_data(data):
     for p in proteins:
         accession = p['primaryAccession']
         
-        # חילוץ שם החלבון בצורה בטוחה
+        # Safely extract the protein name
         try:
             name = p['proteinDescription']['recommendedName']['fullName']['value']
         except KeyError:
             name = accession
             
-        # סריקת מאפייני החלבון (features) כדי למצוא מוטציות/וריאציות גנטיות
+        # Scan protein features to find genetic mutations/variations
         features = p.get('features', [])
         
-        # סינון וספירה רק של מאפיינים מסוג 'Natural variant' (מוטציות טבעיות/קשורות למחלה)
+        # Filter and count only 'Natural variant' features (natural/disease-related mutations)
         variants = [f for f in features if f.get('type') == 'Natural variant']
         mutation_count = len(variants)
         
-        # הדפסה קצרה לכל חלבון
+        # Short printout for each protein
         short_name = name[:30] + "..." if len(name) > 30 else name
         print(f"ID: {accession} | Protein: {short_name:33} | Documented Mutations: {mutation_count}")
         
-        # עדכון משתנים לצורך הסיכום
+        # Update variables for the summary
         total_mutations += mutation_count
         if mutation_count > most_mutated_protein["mutation_count"]:
             most_mutated_protein = {
@@ -59,7 +59,7 @@ def process_mutation_data(data):
                 "id": accession
             }
             
-    # --- סיכום העיבוד ---
+    # --- Processing Summary ---
     avg_mutations = total_mutations / len(proteins)
     
     print("\n--- Data Processing Insights ---")

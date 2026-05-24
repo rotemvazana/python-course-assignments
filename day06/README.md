@@ -56,3 +56,4 @@ Or alternatively:
 I used [Gemini](https://gemini.google.com/app) to assist with the following things:
 
 prompts:
+1. היי, אני רוצה שתעזור לי לכתוב קוד בפייתון שמוריד נתונים מ-UniProt (דרך ה-REST API שלהם). ספציפית, אני רוצה תוכנית שתוריד נתונים של tumor suppressor proteins הומניים ותבצע ניתוח של מספר המוטציות שלהם על ידי ספירת מוטציות מסוג 'Natural variant' המתועדות לכל חלבון, ומציאת ה tumor suppressor proteinבעל מספר המוטציות המתועדות הגבוה ביותר. 

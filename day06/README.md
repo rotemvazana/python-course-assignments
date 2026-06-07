@@ -5,6 +5,7 @@ This assignment uses the UniProt database:
 
 - UniProt is a large web-based biological database containing detailed information about proteins.
 - It provides protein sequences, functions, structural information, disease associations, mutations, and annotations.
+- UniProt provides biological data in multiple formats, including JSON, FASTA, XML, RDF, and tabular text formats.
 - The database is widely used in bioinformatics and molecular biology research.
 
 ## Description
@@ -45,7 +46,7 @@ The goal is to identify proteins that may be especially vulnerable to cancer-rel
 
 
 ## Requirements
-This program uses a third-party library that need to be installed before running it:
+This program uses a third-party library that needs to be installed before running it:
 ```bash
    pip install -r requirements.txt
 ```
@@ -56,3 +57,4 @@ Or alternatively:
 I used [Gemini](https://gemini.google.com/app) to assist with the following things:
 
 prompts:
+1. היי, אני רוצה שתעזור לי לכתוב קוד בפייתון שמוריד נתונים מ-UniProt (דרך ה-REST API שלהם). ספציפית, אני רוצה תוכנית שתוריד נתונים של tumor suppressor proteins הומניים ותבצע ניתוח של מספר המוטציות שלהם על ידי ספירת מוטציות מסוג 'Natural variant' המתועדות לכל חלבון, ומציאת ה tumor suppressor proteinבעל מספר המוטציות המתועדות הגבוה ביותר. 

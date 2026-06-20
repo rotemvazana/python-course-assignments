@@ -1,0 +1,6 @@
+# Third-party libraries required for day06
+pandas
+scikit-learn
+seaborn
+matplotlib
+pytest
